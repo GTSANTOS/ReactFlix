@@ -83,6 +83,7 @@ export default function CadastroVideo() {
     <div className="main">
       <h1 className="titulo">Cadastro de Vídeo</h1>
 
+
       <form className="formulario" onSubmit={handleSubmit}>
         <FormField
           name="titulo"

@@ -4,11 +4,18 @@
   grid-column-gap: 40px;
 }
 
+@media(max-width: 860px) {
+  .GridButton {
+    display: flex;
+    align-items: center;
+  }
+}
+
 .formulario {
   padding: 50px 0;
 }
 
-.titulo {
+.usuario {
   text-align: center;
 }
 

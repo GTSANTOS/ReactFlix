@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 
@@ -7,23 +7,35 @@ import Menu from './components/Menu';
 import Footer from './components/Footer';
 import Main from './styles/Main';
 import GlobalStyled from './styles/GlobalStyled';
-
-/*
-  <GlobalStyled />
-      <ToastContainer autoClose={3000} className="toast-container" />
-*/
+import userContext from './store/UserContext';
 
 function App() {
+  const [isLogado, setIsLogado] = useState(false);
+  const [contextValue, setContextValue] = useState({});
+
+  const handleUserContext = (tipo) => {
+    setIsLogado(tipo);
+  };
+
+  useEffect(() => {
+    setContextValue({
+      isLogado,
+      handleUserContext,
+    });
+  }, [isLogado]);
+
   return (
-    <BrowserRouter>
-      <Menu />
-      <Main>
-        <Routes />
-      </Main>
-      <Footer />
-      <GlobalStyled />
-      <ToastContainer autoClose={3000} className="toast-container" />
-    </BrowserRouter>
+    <userContext.Provider value={contextValue}>
+      <BrowserRouter>
+        <Menu />
+        <Main>
+          <Routes />
+        </Main>
+        <Footer />
+        <GlobalStyled />
+        <ToastContainer autoClose={3000} className="toast-container" />
+      </BrowserRouter>
+    </userContext.Provider>
   );
 }
 
