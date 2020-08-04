@@ -1,0 +1,28 @@
+{
+  "categorias": [
+    {
+      "id": 1,
+      "titulo": "Dragon Ball legends",
+      "cor": "#6BD1FF",
+      "descricao": "Video do Dragon Ball",
+      "link_extra": {
+        "text": "Curso de Lógica de Programação",
+        "url": "https://www.youtube.com/playlist?list=PLHz_AreHm4dmSj0MHol_aoNYCSGFqvfXV"
+      }
+    }
+  ],
+  "videos": [
+    {
+      "id": 1,
+      "categoriaId": 1,
+      "titulo": "A saga do pvp aleatório | Dragon Ball legends (Jão_Flowkz)",
+      "url": "https://www.youtube.com/watch?v=l9ygdC6I_yI"
+    },
+    {
+      "id": 2,
+      "categoriaId": 1,
+      "titulo": "Pvp com o goku do kaioken amarelo | Dragon Ball Legends (Jão_Flowkz)",
+      "url": "https://www.youtube.com/watch?v=bB19ezcpZKY"
+    }
+  ]
+}

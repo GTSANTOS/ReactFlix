@@ -1,0 +1,46 @@
+{
+  "categorias": [
+    {
+      "id": 1,
+      "titulo": "Dragon Ball Legends",
+      "cor": "#6BD1FF",
+      "descricao": "Video do Dragon Ball",
+      "link_extra": {
+        "text": "Dragon Ball Legends",
+        "url": "https://www.youtube.com/channel/UCoLTyyiPtD1bSNFokgCQkdw"
+      }
+    },
+    {
+      "titulo": "Dragon Ball dokkan battle",
+      "descricao": "Jogo Dragon Ball dokkan battle",
+      "cor": "#9900ff",
+      "id": 2
+    }
+  ],
+  "videos": [
+    {
+      "id": 1,
+      "categoriaId": 1,
+      "titulo": "A saga do pvp aleatório | Dragon Ball legends (Jão_Flowkz)",
+      "url": "https://www.youtube.com/watch?v=l9ygdC6I_yI"
+    },
+    {
+      "id": 2,
+      "categoriaId": 1,
+      "titulo": "Pvp com o goku do kaioken amarelo | Dragon Ball Legends (Jão_Flowkz)",
+      "url": "https://www.youtube.com/watch?v=bB19ezcpZKY"
+    },
+    {
+      "titulo": "A batalha epica dos soquinhos Vs Sou fofo do discord",
+      "url": "https://www.youtube.com/watch?v=0PI__QO23WE",
+      "categoriaId": 1,
+      "id": 3
+    },
+    {
+      "titulo": "Agora com kamehameha | Dragon Ball dokkan battle",
+      "url": "https://www.youtube.com/watch?v=xYnMiWDMiuA",
+      "categoriaId": 2,
+      "id": 4
+    }
+  ]
+}
